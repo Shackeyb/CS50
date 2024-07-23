@@ -2,7 +2,7 @@ def main():
     expression = input("Enter an arithmetic expression (e.g., 1 + 1): ")
     
     x, y, z = expression.split(" ")
-    
+ 
     x = float(x)
     z = float(z)
     
