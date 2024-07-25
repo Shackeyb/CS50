@@ -1,22 +1,22 @@
 def main():
-    expression = input("Enter an arithmetic expression (e.g., 1 + 1): ")
+    expression = input("Input an expression: ")
     
     x, y, z = expression.split(" ")
- 
+
     x = float(x)
     z = float(z)
     
-    if y == '+':
-        result = x + z
-    elif y == '-':
-        result = x - z
-    elif y == '*':
-        result = x * z
-    elif y == '/':
-        result = x / z
+    if y == "+":
+        expression = float(x + z)
+    elif y == "-":
+        expression = float(x - z)
+    elif y == "*":
+        expression = float(x * z)
+    elif y == "/":
+        expression = float(x / z)
+    elif y != "+" or "-" or "*" or "/":
+        print("nah bruh")
+        
+    print(expression)
     
-    print(f"{result}")
-
-if __name__ == "__main__":
-    main()
-
+main()
